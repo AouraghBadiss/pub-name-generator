@@ -64,7 +64,7 @@ function showFinalScreen() {
     }, duree);
     setTimeout(function() {
         mainScreen.style.display = "none";
-        finalScreen.style.display = "flex";
+        finalScreen.style.display = "block";
         finalScreen.classList.add("show");
         pubName.innerHTML = finalPubName;
     }, duree + transition);
