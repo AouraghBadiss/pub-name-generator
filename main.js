@@ -10,6 +10,7 @@ const mainScreen = document.getElementById("main");
 const finalScreen = document.getElementById("final-screen");
 let finalPubName = "";
 const pubName = document.getElementById("pub-name");
+const comeBackHome = document.getElementById("come-back-home");
 
 function generateItem(rectangle, txtRect) {
     const content = document.createElement("div");
@@ -70,6 +71,21 @@ function showFinalScreen() {
     }, duree + transition);
 }
 
+function returnStart() {
+    const duree = 1000;
+    const transition = 1000;
+    setTimeout(function() {
+        finalScreen.classList.add("hide");
+        finalScreen.classList.remove("show");
+    }, duree);
+    setTimeout(function() {
+        finalScreen.style.display = "none";
+        mainScreen.style.display = "block";
+        mainScreen.classList.add("show");
+        mainScreen.classList.remove("hide");
+    }, duree + transition);
+}
+
 window.onload = function() {
     intro();
     generateList(words1, rect1);
@@ -79,6 +95,7 @@ window.onload = function() {
         displayValidateButton();
     });
     validateButton.addEventListener("click", showFinalScreen);
+    comeBackHome.addEventListener("click", returnStart);
 }
 
 

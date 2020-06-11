@@ -49,12 +49,12 @@ body {
 h1, #display-carac {
     margin-bottom: 60px;
     text-align: center;
-    color: white;
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
+    color: #FFCD71;
 }
 
 #display-carac  {
@@ -95,6 +95,7 @@ p {
     font-size: 3.2rem;
     font-style: italic;
     font-weight: 900;
+    color: white;
     padding-top: 3px;
 }
 
@@ -110,7 +111,7 @@ button {
     height: 60px;
     border: none;
     border-radius: 10px;
-    background-color: rgba(243, 198, 100);
+    background-color: #FFCD71;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -199,6 +200,12 @@ button {
     width: 300px;
     height: auto;
     margin-bottom: 30px;
+}
+
+#come-back-home {
+    background-color: #4EB882;
+    margin-top: 60px;
+    cursor: pointer;
 }
 
 @keyframes zoom {
